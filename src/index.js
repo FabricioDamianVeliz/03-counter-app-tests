@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import PrimeraApp from './PrimeraApp';
+import CounterApp from './CounterApp';
+import './index.css'; //Con esto importamos la hoja de estilo en cascada
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/*const saludo = <h1>HOLA MUNDO</h1>;
+
+const divRoot = document.querySelector('#root');
+
+ReactDOM.render(saludo,divRoot);
+
+console.log(divRoot)*/
+
+
+
+const divRoot = document.querySelector('#root');
+
+//ReactDOM.render(<PrimeraApp saludo='Hola'/>,divRoot);
+ReactDOM.render(<CounterApp />,divRoot);
+
+//console.log(divRoot)
+
+
+
+
